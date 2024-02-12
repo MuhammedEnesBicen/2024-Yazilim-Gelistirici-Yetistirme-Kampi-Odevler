@@ -17,13 +17,13 @@ namespace Business.Concrete
         }
         public void GiveMask(Person person)
         {
-
             if (_applicantService.CheckPerson(person))
             {
-                Console.WriteLine(person.FirstName + " için maske verildi.");
-            } else
+                Console.WriteLine(person.FirstName + " için maske VERİLEBİLİR");
+            }
+            else
             {
-                Console.WriteLine(person.FirstName + " için maske VERİLEMEDİ.");
+                Console.WriteLine(person.FirstName + " için maske VERİLEMEDİ. Çünkü bilgileri Mernisten doğrulanamadı.");
             }
         }
     }
